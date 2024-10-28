@@ -6,12 +6,71 @@
     <title>Passos Manuel</title>
 </head>
 <body>
-    <script type="text/javascrit">
+    <script>
         var nome ="Passos Manuel";
         document.write(nome);
         document.write("<h1>" + nome + "</h1>");
     </script>
     
-    <p></p>Este exemplo declara uma variável, dá um valor a essa variável, e mostra essa variável.</p>
+    <p>Este exemplo declara uma variável, dá um valor a essa variável, e mostra essa variável.</p>
+
+    <h1> Praticando com variáveis!</h1>
+    <script>
+        var nome = prompt("Insira o nome, por favor?");
+        var hora = prompt("Introduza a hora, por favor");
+
+        if(hora < 12){
+            document.write("Bom dia. Seja bem vindo senhor(a) " + nome);}
+        else{
+            if(hora >= 14){
+                document.write("Seja bem vindo! Almoça connosco?");
+            }}
+    </script>
+
+
+<h1>IDADE!</h1>
+    <button onclick="verificarIdade()">Clique para inserir o seu nome e idade</button>
+    
+    <p id="mensagem"></p>
+
+    <script>
+        // Função para pedir o nome e a idade do usuário e verificar se ele é maior de idade
+        function verificarIdade() {
+            // Solicita o nome do usuário
+            const nome = prompt("Digite o seu nome:");
+
+            // Solicita a idade do usuário
+            const idade = prompt("Digite a sua idade:");
+
+            // Verifica se a idade é maior ou igual a 18
+            if (idade >= 18) {
+                // Exibe mensagem para maiores de idade
+                document.getElementById("mensagem").textContent = `Olá, ${nome}! Você é maior de idade.`;
+            } else {
+                // Exibe mensagem para menores de idade
+                document.getElementById("mensagem").textContent = `Olá, ${nome}! Você é menor de idade.`;
+            }
+        }
+    </script>
+
+<p id="demo">Apresenta o resultado aqui!</p>
+
+<script>
+    // Cria as variáveis aqui!
+    var Nome = "João", Apelido = "Silva", idade = 25;
+    document.getElementById("demo").innerHTML = Nome + " " + Apelido + " tem " + idade;
+</script>
+
+<script>
+    nome=prompt("Introduza o seu nome: ", "Em maiúsculas");
+
+    if (nome.lenght >= 5)
+{
+    document.write("o seu nome é bem longo!");
+}else{
+    document.write("os seu nome é curto";)
+}
+</script>
+
 </body>
 </html>
