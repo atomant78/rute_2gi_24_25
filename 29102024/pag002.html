@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir Cores</title>
+</head>
+<body>
+    <!-- Cabeçalho onde os dados serão exibidos -->
+    <h2 id="resultado"></h2>
+
+    <script>
+        // Declaração do array de strings chamado 'cores' com 5 itens
+        var cores = ["vermelho", "azul", "verde", "amarelo", "roxo"];
+
+        // Seleção do segundo item do array e o comprimento do array
+        var segundoItem = cores[1];
+        var comprimentoArray = cores.length;
+
+        // Exibição dos dados no elemento <h2> com id 'resultado'
+        document.getElementById("resultado").innerText = 
+            `A segunda cor é: ${segundoItem}. O comprimento do array é: ${comprimentoArray}.`;
+    </script>
+</body>
+</html>
