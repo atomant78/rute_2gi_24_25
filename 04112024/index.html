@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<body>
+<script>
+
+var i = 0;
+do
+{
+i++;
+document.write("O número é " + i);
+document.write("<br />");
+}
+while (i <= 5);
+
+</script>
+<script>
+    var asuaIdade="";
+    do{
+        asuaIdade = prompt("Introduza a sua Idade!" , "Aqui por favor!")
+
+    }
+    while (isNaN(asuaIdade) == true);
+
+    document.write("Muito bem a sua idade é " + asuaIdade + " anos!");
+</script>
+
+<script>
+    function aminhaFuncao(){
+        alert("Olá a todos!");
+    }
+</script>
+
+<h2> A minha primeira função em JavaScript!</h2>
+
+<button onclick="aminhaFuncao()">Experimenta</button>
+
+<script >
+    function multiplicar(m1, m2, m3, m4)
+    {
+    var m = m1*m2*m3*m4
+    return m
+    }
+    </script>
+    
+    </head>
+    
+    <body>
+    <p>O valor devolvido pela função é:</p>
+    
+    <script >
+    document.write('multiplicar(1, 2, 3, 4) = '+multiplicar(1, 2, 3, 4));
+    </script>
+    
+</body>
+</html>
