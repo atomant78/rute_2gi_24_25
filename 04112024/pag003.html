@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+#caixa1 {
+    width: 200px;
+    height: 45px;
+	background-color:black;
+    border:5px solid #73AD21;
+	margin:80px;
+	padding:20px;
+	font-size:28px;
+}
+
+#caixa2 {
+    width: 250px;
+    height: 45px;
+	background-color:black;
+    border:10px solid blue;
+	margin:350px;
+	padding:20px;
+	font-size:28px;
+}
+</style>
+</head>
+
+<body onload="abrir()">
+
+<h1 id="cursor" style="background-color:black; color:red; text-align:center"> *** JANELAS POP-UP *** </h1>
+
+<input type="button" value="Abrir uma janela Pop-up" onclick="abrir2()"><br><br>
+
+<a href="javascript:abrir3()">Clique aqui para abrir uma nova página</a><br><br>
+
+<div id="caixa1" onmouseover="mensagem()" style="background-color:black; margin=200px ;color:white; text-align:center">Passe o rato aqui!</div><br><br>
+
+<div id="caixa1" onmouseout="multi()" style="background-color:black; color:red; text-align:center">Não passe o rato aqui!</div>
+
+<script>
+
+function abrir(){
+    window.open("http://www.sapo.pt/", "janela1", "height=300, width=400, scrollbars=yes");}
+
+function abrir2(){
+    window.open("http://pplware.sapo.pt/", "janela2", "height=400, width=600, scrollbars=yes");}
+
+function abrir3(){
+    window.open("http://informaticafacil.com.pt/", "janela3", "height=500, width=650, scrollbars=yes");}
+
+function mensagem(){
+    window.alert('Você passou o rato sobre o título!');
+	window.open("http://youtube.pt/", "janela4", "height=500, width=650, scrollbars=yes");}
+	
+function multi(){
+	for(var i=0; i<=3; i++){
+	var p=["height=200, width=200, screenX=100, screenY=100","height=200, width=200, screenX=300, screenY=200","height=200, width=200, screenX=500, screenY=300","height=200, width=200, screenX=700, screenY=400"]
+	window.open("http://rs1114.pbsrc.com/albums/k528/keveri/Misc/Laughing-chimp-gif-animation.gif~c200", i, p[i]);}}
+	
+	document.getElementById("cursor").style.cursor = "wait";
+</script>
+
+</body>
+</html>
