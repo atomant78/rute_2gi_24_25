@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Principal</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+        <legend>Informação Pessoal:</legend>
+        <br>
+        <label for="nome_id">Nome Completo: </label>
+        <input type="text" name="nome" size="60" value="">
+        <br><br>
+        <label for="sex_id">Sexo: </label>
+        <input id="masculino_id" type="radio" value="masculino" name="sexo_info">Masculino
+        <input id="feminino_id" type="radio" value="feminino" name="sexo_info">Feminino
+    <br><br>
+        <label for="morada_id">Morada: </label>
+        <input type="text" name="morada" size="100" value="">
+        <br><br>
+        <label for="localidade_id">Localidade: </label>
+        <input id="localidade_id" name="localidade" type="text" list="localidade">
+        <datalist id="localidades">
+            <option value="Lisboa">Lisboa
+            <option value="Odivelas">Odivelas
+            <option value="Amadora">Amadora
+            <option value="Oeiras">Oeiras
+            <option value="Alverca">Alverca
+            </option>
+        </datalist>
+        <br><br>
+        <label for="tel_id">Telefone/telemóvel:        </label>
+        <input id="tel_id" type="tel" name="telefone" size="30" placeholder="Nº de telefone/telemóvel">
+        <br><br>
+        <label for="naturalidade_id">Naturalidade: </label>
+        <select id="naturlidade_id" name="naturalidade">
+            <option value="PT">Portugal
+            <option value="AO">Angola
+            <option value="BR">Brasil   
+            <option value="FR">França
+            <option value="Outro">Outra
+            </option>
+        </select>
+    <br><br>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
